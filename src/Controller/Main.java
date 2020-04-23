@@ -53,6 +53,7 @@ public class Main {
 
 	public static void writeMenu() {
 		System.out.println("-------MENU-------");
+		System.out.println("Name: Alvaro Rueda HighSchool: IES JACARANDA");
 		System.out.println("1. Add Data");
 		System.out.println("2. Calculate Average");
 		System.out.println("3. Show info");
