@@ -12,6 +12,8 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		//REMOVE METHOD
+		//EXCEPTIONS
 		Data infections = new Data("Infections");
 		int flag;
 
