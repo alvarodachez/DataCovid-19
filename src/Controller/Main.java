@@ -29,7 +29,7 @@ public class Main {
 
 			switch (flag) {
 			case 1:
-				String Date = readString("Write an Date (Format: 12 January");
+				String Date = readString("Write a Date (Format: 12 January");
 				int Value = readInteger("Write a value");
 				infections.addValue(Date, Value);
 				break;
@@ -40,8 +40,12 @@ public class Main {
 			case 3:
 				System.out.println(infections.toString());
 				break;
+			case 4:
+				Date = readString("Write a Date (Format: 12 January)");
+				System.out.println(infections.getValueAccordingDate(Date));
+				break;
 			}
-		} while (flag != 4);
+		} while (flag != 5);
 
 		// WRITE FILE
 		try {
@@ -59,7 +63,8 @@ public class Main {
 		System.out.println("1. Add Data");
 		System.out.println("2. Calculate Average");
 		System.out.println("3. Show info");
-		System.out.println("4. Exit.");
+		System.out.println("4. Get a value according a date");
+		System.out.println("5. Exit.");
 	}
 
 	public static String readString(String msg) {

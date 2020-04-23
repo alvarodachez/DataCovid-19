@@ -43,6 +43,18 @@ public class Data {
 	public void addValue(String Date, int Value) {
 		this.DataList.add(new DataList(Date, Value));
 	}
+	
+	public String getValueAccordingDate(String Date) {
+		
+		int pos = 0;
+		for(DataList aux : this.DataList) {
+			if(Date.compareTo(aux.getDate()) == 0) {
+				pos = this.DataList.indexOf(aux);
+			}
+		}
+		
+		return "Date: " + this.DataList.get(pos).getDate() + "Value: " + this.DataList.get(pos).getValue();
+	}
 
 	public String toString() {
 		StringBuilder aux = new StringBuilder();
