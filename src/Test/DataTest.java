@@ -46,9 +46,11 @@ class DataTest {
 				"Date: 1Value: 1"+"\n", test.toString());
 	}
 
-//	@Test
-//	void testToString() {
-//		fail("Not yet implemented");
-//	}
+	@Test
+	void testToString() {
+		Data test = new Data("test");
+		assertEquals("Name: test Average: 0"+"\n",test.toString());
+
+	}
 
 }

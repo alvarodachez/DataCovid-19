@@ -59,7 +59,11 @@ public class Data {
 	public String toString() {
 		StringBuilder aux = new StringBuilder();
 
-		this.setAverage();
+		if(!this.DataList.isEmpty()) {
+		
+			this.setAverage();
+		}
+		
 
 		for (DataList d : this.DataList) {
 			aux.append("Date: " + d.getDate() + "Value: " + d.getValue() + "\n");
