@@ -46,4 +46,13 @@ public class Helper {
 		reader.close();
 
 	}
+	
+	//PRINT VERSION
+	public static String printVersion() {
+		return "Version 1.0";
+	}
+	//SUM OPERATION
+	public static int sumOperation(int a, int b) {
+		return a + b;
+	}
 }
